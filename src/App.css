@@ -11,11 +11,19 @@ p {
   color: white;
 }
 
+li {
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
   background: url('../src/assets/images/black-circuit-3.jpg');
   background-size: cover;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 #navbar {

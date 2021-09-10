@@ -161,6 +161,7 @@ const App = () => {
             <Links />
           </Drawer>
         </div>
+        <Footer />
       </div>
     </Router>
   );
