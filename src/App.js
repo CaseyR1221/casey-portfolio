@@ -20,7 +20,8 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
-import Image from '../src/assets/images/profile-background-3.jpeg'
+import Logo from '../src/assets/images/logo.png';
+import Links from "./components/Links";
 
 const drawerWidth = 300;
 
@@ -108,9 +109,10 @@ const App = () => {
             })}
           >
             <Toolbar>
-              <Typography variant="h6" noWrap className={classes.title}>
+              {/* <Typography variant="h5" noWrap className={classes.title}>
                 Casey J. Rowlands
-              </Typography>
+              </Typography> */}
+              <img src={Logo} alt='logo' height='128' width='128' style={{margin: 'auto'}} />
               <IconButton
                 color="inherit"
                 aria-label="open drawer"
@@ -122,7 +124,11 @@ const App = () => {
               </IconButton>
             </Toolbar>
           </AppBar>
-          <main>
+          <main
+            className={clsx(classes.content, {
+              [classes.contentShift]: open,
+            })}
+          >
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
@@ -152,6 +158,7 @@ const App = () => {
             <Divider />
             <Nav />
             <Divider />
+            <Links />
           </Drawer>
         </div>
       </div>
@@ -161,20 +168,3 @@ const App = () => {
 
 export default App;
 
-// const App = () => {
-//   return (
-//     <Router>
-//         <div className="App">
-
-//           <Switch>
-//             <Route exact path="/" component={Home} />
-//             <Route exact path="/about" component={About} />
-//             <Route exact path="/projects" component={Projects} />
-//             <Route exact path="/contact" component={Contact} />
-//             <Route component={NoMatch} />
-//           </Switch>
-
-//         </div>
-//     </Router>
-//   );
-// };

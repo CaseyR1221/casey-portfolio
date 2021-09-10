@@ -1,13 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+p {
+  color: white;
+}
 
 .App {
   text-align: center;
   background: url('../src/assets/images/black-circuit-3.jpg');
   background-size: cover;
   min-height: 100vh;
-}
-
-.nav-links {
-  /* background: linear-gradient(#1e1e1e, #111111); */
 }
 
 #navbar {
