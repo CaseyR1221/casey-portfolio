@@ -242,8 +242,8 @@ const About = () => {
                     </List>
                     <img src={Chevron} alt='Chevron' height='1000' width='1000' />
                 </Grid> 
-                <Grid item xs={12} lg={6}>
-                        <img src={Motto} alt='Life Motto' height='1000' width='1000'/>
+                <Grid item xs={12} lg={6} style={{paddingTop: '4rem'}}>
+                        <img src={Motto} alt='Life Motto' height='750' width='750'/>
                 </Grid>  
             </Grid>
         </div>

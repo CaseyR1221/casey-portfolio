@@ -20,14 +20,83 @@ main {
 }
 
 .App {
-  text-align: center;
+  /* text-align: center; */
   background: url('../src/assets/images/black-circuit-3.jpg');
   background-size: cover;
   /* min-height: 100vh; */
 }
 
+.pImage {
+  height: 400px;
+  width: 600px;
+  margin-top: 2rem;
+}
+
+.resume-left {
+  min-height: 100vh;
+  background: linear-gradient(#520ac7, #0430de);
+}
+
+.resume-right {
+  min-height: 100vh;
+  background-color: azure;
+}
+
+.intro-h {
+  color: rgb(11, 82, 205);
+}
+
+.intro-p {
+  color: black;
+}
+
+.skills-h {
+  color: rgb(11, 82, 205);
+}
+
+.skill-category {
+  color: black;
+}
+
+.education-h {
+  color: rgb(11, 82, 205);
+}
+
+.university {
+  color: black;
+}
+
+.college {
+  color: black;
+}
+
+.major {
+  color: black;
+}
+
+.projects-h {
+  color: rgb(11, 82, 205);
+}
+
+.project-item {
+  color: rgb(150, 24, 157);
+}
+
+.project-title {
+  color: rgb(150, 24, 157);
+}
+
+.project-desc {
+  color: black;
+  padding-bottom: 2rem;
+}
+
 #navbar {
   background: linear-gradient(#1e1e1e, #111111);
+}
+
+#projects {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

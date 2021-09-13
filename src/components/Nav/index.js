@@ -33,6 +33,12 @@ const Nav = () => {
           <ListItem button style={{ paddingTop: "4rem" }}>
             {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
             <ListItemText>
+                <Link to="/resume" style={{ fontSize: '2rem', color: 'white' }}>Resume</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem button style={{ paddingTop: "4rem" }}>
+            {/* <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon> */}
+            <ListItemText>
                 <Link to="/contact" style={{ fontSize: '2rem', color: 'white' }}>Contact</Link>
             </ListItemText>
           </ListItem>

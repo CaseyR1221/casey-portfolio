@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div className={classes.root}>
             <Grid container spacing={1}>
-                <Grid item xs={12} lg={4} style={{marginTop: '15rem', display: 'flex', justifyContent: 'center'}}>
+                <Grid item xs={12} lg={4} style={{marginTop: '10rem', display: 'flex', justifyContent: 'center'}}>
                     <img src={Me} alt='Casey Rowlands' height='450' width='450' />
                 </Grid>  
                 <Grid item xs={12} lg={8}>

@@ -3,9 +3,10 @@ import React from 'react'
 const Contact = () => {
     return (
         <div>
-            <h1 style={{marginTop: '10rem'}}>Hello4</h1>
+            
         </div>
     )
 }
 
 export default Contact
+

@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 
 const Footer = () => {
     return (
-        <div>  
+        <div style={{marginTop: '5rem'}}>  
             <Typography>
                 Casey Rowlands ©2021
             </Typography>    
