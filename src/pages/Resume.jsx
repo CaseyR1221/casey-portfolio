@@ -7,7 +7,9 @@ import Casey from '../assets/images/resume-pic.JPG'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      color: 'black',
+      display: 'flex',
+      flexDirection: 'column',
+      flexShrink: 2,
     },
   }));
 
@@ -16,7 +18,7 @@ const Resume = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container style={{marginTop: '7rem'}}>
+      <Grid container style={{marginTop: '5rem'}}>
         <Grid item xs={6} className='resume-left' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
           <img src={Casey} alt='Casey Rowlands' height='350' width='350' style={{marginTop: '5rem', borderRadius: '25%' }} />
           <div style={{paddingTop: '5rem'}}>

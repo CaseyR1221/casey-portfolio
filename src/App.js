@@ -12,121 +12,73 @@ import Footer from "./components/Footer";
 import clsx from "clsx";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
-import Divider from "@material-ui/core/Divider";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
-import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
 import Logo from '../src/assets/images/logo.png';
+import MenuOpenIcon from '@material-ui/icons/MenuOpen';
 import Links from "./components/Links";
 
-const drawerWidth = 300;
-
-const useStyles = makeStyles((theme) => ({
-  root: {
-    display: "flex",
-  },
-  appBar: {
-    transition: theme.transitions.create(["margin", "width"], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-  },
-  appBarShift: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(["margin", "width"], {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginRight: drawerWidth,
-  },
-  title: {
-    flexGrow: 1,
-  },
-  hide: {
-    display: "none",
-  },
-  drawer: {
-    width: drawerWidth,
-    flexShrink: 0,
-  },
-  drawerPaper: {
-    width: drawerWidth,
+const useStyles = makeStyles({
+  list: {
+    width: 250,
     background: "linear-gradient(#bf64e6, #2a236d)"
   },
-  drawerHeader: {
-    display: "flex",
-    alignItems: "center",
-    padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
-    ...theme.mixins.toolbar,
-    justifyContent: "flex-start",
+  fullList: {
+    width: 'auto',
   },
-  content: {
-    flexGrow: 1,
-    padding: theme.spacing(3),
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.leavingScreen,
-    }),
-    marginRight: -drawerWidth,
-  },
-  contentShift: {
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    marginRight: 0,
-  },
-}));
+});
 
 const App = () => {
   const classes = useStyles();
-  const theme = useTheme();
-  const [open, setOpen] = React.useState(false);
 
-  const handleDrawerOpen = () => {
-    setOpen(true);
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
   };
 
-  const handleDrawerClose = () => {
-    setOpen(false);
-  };
+  const list = (anchor) => (
+    <div
+      className={clsx(classes.list, {
+        [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+      })}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+      <Nav />
+      <Divider />
+      <Links />
+    </div>
+  );
 
   return (
-    <Router>
-      <div className="App">
-        <div className={classes.root}>
-          <CssBaseline />
-          <AppBar
-            position="fixed"
-            id="navbar"
-            className={clsx(classes.appBar, {
-              [classes.appBarShift]: open,
-            })}
-          >
-            <Toolbar>
-              <img src={Logo} alt='logo' height='128' width='128' style={{margin: 'auto'}} />
-              <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="end"
-                onClick={handleDrawerOpen}
-                className={clsx(open && classes.hide)}
-              >
-                <MenuIcon />
-              </IconButton>
-            </Toolbar>
-          </AppBar>
-          <main
-            className={clsx(classes.content, {
-              [classes.contentShift]: open,
-            })}
-          >
+      <Router>
+        <div className="App">
+          <div style={{display: "flex", justifyContent: "flex-end"}}>
+            <Button onClick={toggleDrawer('top', true)} >
+              <MenuOpenIcon style={{fill: "white", height: 75, width: 75}} />
+            </Button>
+            <Drawer 
+              id='navigation' 
+              anchor='top' open={state['top']} 
+              onClose={toggleDrawer('top', false)}
+            >
+              {list('top')}
+            </Drawer>
+          </div>
+          <main>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/about" component={About} />
@@ -136,33 +88,73 @@ const App = () => {
               <Route component={NoMatch} />
             </Switch>
           </main>
-          <Drawer
-            className={classes.drawer}
-            variant="persistent"
-            anchor="right"
-            open={open}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-          >
-            <div className={classes.drawerHeader}>
-              <IconButton onClick={handleDrawerClose}>
-                {theme.direction === "rtl" ? (
-                  <ChevronLeftIcon style={{ fill: 'white' }} />
-                ) : (
-                  <ChevronRightIcon style={{ fill: 'white', fontSize: '2rem' }} />
-                )}
-              </IconButton>
-            </div>
-            <Divider />
-            <Nav />
-            <Divider />
-            <Links />
-          </Drawer>
         </div>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+    // <Router>
+    //   <div className="App">
+    //     <div className={classes.root}>
+    //       <CssBaseline />
+    //       <AppBar
+    //         position="fixed"
+    //         id="navbar"
+    //         className={clsx(classes.appBar, {
+    //           [classes.appBarShift]: open,
+    //         })}
+    //       >
+    //         <Toolbar>
+    //           <img src={Logo} alt='logo' height='128' width='128' style={{margin: 'auto'}} />
+    //           <IconButton
+    //             color="inherit"
+    //             aria-label="open drawer"
+    //             edge="end"
+    //             onClick={handleDrawerOpen}
+    //             className={clsx(open && classes.hide)}
+    //           >
+    //             <MenuIcon />
+    //           </IconButton>
+    //         </Toolbar>
+    //       </AppBar>
+    //       <main
+    //         className={clsx(classes.content, {
+    //           [classes.contentShift]: open,
+    //         })}
+    //       >
+    //         <Switch>
+    //           <Route exact path="/" component={Home} />
+    //           <Route exact path="/about" component={About} />
+    //           <Route exact path="/projects" component={Projects} />
+    //           <Route exact path="/resume" component={Resume} />
+    //           <Route exact path="/contact" component={Contact} />
+    //           <Route component={NoMatch} />
+    //         </Switch>
+    //       </main>
+    //       <Drawer
+    //         className={classes.drawer}
+    //         variant="persistent"
+    //         anchor="right"
+    //         open={open}
+    //         classes={{
+    //           paper: classes.drawerPaper,
+    //         }}
+    //       >
+    //         <div className={classes.drawerHeader}>
+    //           <IconButton onClick={handleDrawerClose}>
+    //             {theme.direction === "rtl" ? (
+    //               <ChevronLeftIcon style={{ fill: 'white' }} />
+    //             ) : (
+    //               <ChevronRightIcon style={{ fill: 'white', fontSize: '2rem' }} />
+    //             )}
+    //           </IconButton>
+    //         </div>
+    //         <Divider />
+    //         <Nav />
+    //         <Divider />
+    //         <Links />
+    //       </Drawer>
+    //     </div>
+    //     <Footer />
+    //   </div>
+    // </Router>
   );
 };
 

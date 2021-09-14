@@ -8,9 +8,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    backgroundColor: "aliceblue",
-    margin: "10rem",
-    padding: '3rem'
+    marginTop: "5rem",
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -83,10 +81,13 @@ const Contact = () => {
                 />
                 <button type="submit">{status}</button>
               </div> */}
-              <div>
-                  <Typography variant='h1' style={{marginTop: '10rem', textAlign: 'center'}}>
-                      Contact Me! casey_codes@caseyrowlands.com
-                  </Typography>
+              <div className={classes.root}>
+                <h1>
+                    Contact Me! 
+                </h1>
+                <h2>
+                  casey_codes@caseyrowlands.com
+                </h2>
               </div>
             </div>
     );

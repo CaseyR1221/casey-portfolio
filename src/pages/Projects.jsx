@@ -12,7 +12,7 @@ import Weather from '../assets/images/weather.png'
 
 const Projects = () => {
     return (
-        <div id='projects' style={{marginTop: '10rem'}}>
+        <div id='projects' style={{marginTop: '5rem'}}>
             <Grid container spacing={7}>
                 <Grid item xs={12}>
                     <Typography variant='h4'>

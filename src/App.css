@@ -27,8 +27,8 @@ main {
 }
 
 .pImage {
-  height: 400px;
-  width: 600px;
+  height: 300px;
+  width: 500px;
   margin-top: 2rem;
 }
 
@@ -91,8 +91,8 @@ main {
   padding-bottom: 2rem;
 }
 
-#navbar {
-  background: linear-gradient(#1e1e1e, #111111);
+#navigation {
+  background: linear-gradient(#bf64e6, #2a236d);
 }
 
 #projects {

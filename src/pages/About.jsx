@@ -10,8 +10,12 @@ import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
 import Globe from '../assets/images/green-globe.png';
-import Motto from '../assets/images/motto.png';
-import Chevron from '../assets/images/chevron.png';
+import Mongo from '../assets/images/mongo.png';
+import Express from '../assets/images/express.png';
+import ReactLogo from '../assets/images/react.png';
+import Node from '../assets/images/node.png';
+import Database from '../assets/images/database.png';
+import Logo from '../assets/images/logo.png';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,8 +42,11 @@ const About = () => {
     return (
         <div className={classes.root}>
             <Grid container spacing={5}>
-                <Grid item xs={12}>
-                    <Typography variant='h4' style={{marginTop: '10rem', marginBottom: '5rem', lineHeight: '4rem'}}>
+                <Grid item xs={12} style={{display: "flex", justifyContent: "center", paddingTop: '5rem'}}>
+                    <img src={Logo} alt='logo' height= '350' width= '350'/>
+                </Grid> 
+                <Grid item xs={12} style={{ marginBottom: '10em'}}>
+                    <Typography variant='h4' style={{ margin: '2em', lineHeight: '2em'}}>
                         Hi, my name’s Casey, and I’m a Full-Stack Developer who specializes in building and designing 
                         exceptional and accessible digital experiences. I have always loved tech and building new things, so I am constantly reading 
                         up on and experimenting with new technologies. I’ve worked with a wide variety of programming languages and frameworks, but 
@@ -48,19 +55,19 @@ const About = () => {
                     </Typography>
                 </Grid> 
                 <Grid item xs={12} lg={6}>
-                    <img src={Globe} alt='green globe' height='500' width='500' />
+                    <img src={Globe} alt='green globe' height='475' width='475' />
                 </Grid> 
                 <Grid item xs={12} lg={6}>
                     <List
                         component="list"
                         aria-labelledby="nested-list-subheader"
-                        subheader={
-                            <ListSubheader component="h3" id="nested-list-subheader" style={{color: 'white', fontSize: '2rem'}}>
-                                My Proficiencies
-                            </ListSubheader>
-                        }
                         className={classes.list}
-                        >
+                    >
+                        <ListItem button style={{paddingBottom: '2em'}}>
+                            <Typography variant='h3'>
+                                My Proficiencies
+                            </Typography>
+                        </ListItem>
                         <ListItem button onClick={handleClick}>
                             <Typography variant='h5'>
                                 Foundations
@@ -183,17 +190,20 @@ const About = () => {
                         </Collapse>
                     </List>
                 </Grid> 
-                <Grid xs={12} lg={6} style={{paddingTop: '6rem'}}>
+                <Grid item xs={12} lg={6}>
+                    <img src={Database} alt='database' height='500' width='500' />
+                </Grid> 
+                <Grid item xs={12} lg={6} style={{paddingTop: '6rem'}}>
                     <List
                         component="list"
                         aria-labelledby="nested-list-subheader"
-                        subheader={
-                            <ListSubheader component="h3" id="nested-list-subheader" style={{color: 'white', fontSize: '2rem'}}>
-                                My Hobbies
-                            </ListSubheader>
-                        }
                         className={classes.list}
-                        >
+                    >
+                        <ListItem button style={{paddingBottom: '2em'}}>
+                            <Typography variant='h3'>
+                                My Hobbies
+                            </Typography>
+                        </ListItem>
                         <ListItem button>
                             <Typography variant='h5'>
                                 Web Development
@@ -240,10 +250,18 @@ const About = () => {
                             </List>
                         </Collapse>
                     </List>
-                    <img src={Chevron} alt='Chevron' height='1000' width='1000' />
                 </Grid> 
-                <Grid item xs={12} lg={6} style={{paddingTop: '4rem'}}>
-                        <img src={Motto} alt='Life Motto' height='750' width='750'/>
+                <Grid item xs={12} lg={3} style={{marginTop: '7rem'}}>
+                        <img src={Mongo} alt='MongoDB' height='300' width='300' />
+                </Grid> 
+                <Grid item xs={12} lg={3} style={{marginTop: '7rem'}}>
+                        <img src={Express} alt='Express' />
+                </Grid> 
+                <Grid item xs={12} lg={3} style={{marginTop: '7rem'}}>
+                        <img src={ReactLogo} alt='React' height='300' width='300' />
+                </Grid> 
+                <Grid item xs={12} lg={3} style={{marginTop: '7rem'}}>
+                        <img src={Node} alt='Node' height='' width='' />
                 </Grid>  
             </Grid>
         </div>
