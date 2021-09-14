@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
-    marginTop: "5rem",
+    marginTop: '20rem'
   },
   textField: {
     marginLeft: theme.spacing(1),
@@ -45,7 +45,7 @@ const Contact = () => {
     // };
 
     return (
-            <div>
+            <div className={classes.root}>
               {/* <div className={classes.root}>
                 <TextField
                   id="margin-dense"
@@ -81,14 +81,13 @@ const Contact = () => {
                 />
                 <button type="submit">{status}</button>
               </div> */}
-              <div className={classes.root}>
-                <h1>
-                    Contact Me! 
-                </h1>
-                <h2>
-                  casey_codes@caseyrowlands.com
-                </h2>
-              </div>
+              <Typography variant= 'h2' className='contactEmail'>
+                Contact me any time!
+              </Typography>
+              
+              <Typography variant= 'h3' className='contactEmail'>
+                casey_codes@caseyrowlands.com
+              </Typography>
             </div>
     );
 };

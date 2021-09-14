@@ -88,73 +88,9 @@ const App = () => {
               <Route component={NoMatch} />
             </Switch>
           </main>
+          <Footer />
         </div>
       </Router>
-    // <Router>
-    //   <div className="App">
-    //     <div className={classes.root}>
-    //       <CssBaseline />
-    //       <AppBar
-    //         position="fixed"
-    //         id="navbar"
-    //         className={clsx(classes.appBar, {
-    //           [classes.appBarShift]: open,
-    //         })}
-    //       >
-    //         <Toolbar>
-    //           <img src={Logo} alt='logo' height='128' width='128' style={{margin: 'auto'}} />
-    //           <IconButton
-    //             color="inherit"
-    //             aria-label="open drawer"
-    //             edge="end"
-    //             onClick={handleDrawerOpen}
-    //             className={clsx(open && classes.hide)}
-    //           >
-    //             <MenuIcon />
-    //           </IconButton>
-    //         </Toolbar>
-    //       </AppBar>
-    //       <main
-    //         className={clsx(classes.content, {
-    //           [classes.contentShift]: open,
-    //         })}
-    //       >
-    //         <Switch>
-    //           <Route exact path="/" component={Home} />
-    //           <Route exact path="/about" component={About} />
-    //           <Route exact path="/projects" component={Projects} />
-    //           <Route exact path="/resume" component={Resume} />
-    //           <Route exact path="/contact" component={Contact} />
-    //           <Route component={NoMatch} />
-    //         </Switch>
-    //       </main>
-    //       <Drawer
-    //         className={classes.drawer}
-    //         variant="persistent"
-    //         anchor="right"
-    //         open={open}
-    //         classes={{
-    //           paper: classes.drawerPaper,
-    //         }}
-    //       >
-    //         <div className={classes.drawerHeader}>
-    //           <IconButton onClick={handleDrawerClose}>
-    //             {theme.direction === "rtl" ? (
-    //               <ChevronLeftIcon style={{ fill: 'white' }} />
-    //             ) : (
-    //               <ChevronRightIcon style={{ fill: 'white', fontSize: '2rem' }} />
-    //             )}
-    //           </IconButton>
-    //         </div>
-    //         <Divider />
-    //         <Nav />
-    //         <Divider />
-    //         <Links />
-    //       </Drawer>
-    //     </div>
-    //     <Footer />
-    //   </div>
-    // </Router>
   );
 };
 

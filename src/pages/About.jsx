@@ -41,7 +41,7 @@ const About = () => {
     
     return (
         <div className={classes.root}>
-            <Grid container spacing={5}>
+            <Grid container spacing={5} style={{margin: 0, width: '100%'}}>
                 <Grid item xs={12} style={{display: "flex", justifyContent: "center", paddingTop: '5rem'}}>
                     <img src={Logo} alt='logo' height= '350' width= '350'/>
                 </Grid> 

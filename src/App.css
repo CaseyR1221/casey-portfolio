@@ -1,3 +1,7 @@
+html { 
+  font-size:100%; 
+}
+
 h1,
 h2,
 h3,
@@ -99,9 +103,26 @@ main {
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 640px) { 
+  img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .resumeImage {
+    height: 200px !important;
+    width: 200px !important;
+  }
+
+  .pImage {
+    height: 200px !important;
+    width: 400px !important;
+  } 
+
+  .contactEmail {
+    font-size: 28px !important;
+    margin-bottom: 2rem !important;
   }
 }
+
 

@@ -19,7 +19,7 @@ const Home = () => {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={1}>
+            <Grid container spacing={1} style={{margin: 0, width: '100%'}}>
                 <Grid item xs={12} style={{display: 'flex', justifyContent: 'center', marginTop: '10rem'}}>
                     <img src={Me} alt='Casey Rowlands' height='450' width='450' style={{borderRadius: '50%'}} />
                 </Grid>  

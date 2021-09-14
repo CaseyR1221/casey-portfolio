@@ -18,15 +18,18 @@ const Resume = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container style={{marginTop: '5rem'}}>
-        <Grid item xs={6} className='resume-left' style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-          <img src={Casey} alt='Casey Rowlands' height='350' width='350' style={{marginTop: '5rem', borderRadius: '25%' }} />
+      <Grid container style={{margin: 0, width: '100%'}}>
+        <Grid item xs={6} className='resume-left' style={{display: 'flex', flexDirection: 'column', alignItems: "center"}}>
+          <img 
+            src={Casey} 
+            alt='Casey Rowlands' 
+            height='350' 
+            width='350'
+            className='resumeImage' 
+            style={{marginTop: '5rem', borderRadius: '25%' }} />
           <div style={{paddingTop: '5rem'}}>
               <Typography variant='h2' style={{paddingBottom: '2rem'}}>
                   Contact Me:
-              </Typography>
-              <Typography variant='h5' style={{paddingBottom: '1rem'}}>
-                Email: casey_codes@caseyrowlands.com
               </Typography>
               <Typography variant='h5' style={{paddingBottom: '1rem'}}>
                 <a
