@@ -22,7 +22,7 @@ const Home = () => {
         <div className={classes.root}>
             <Grid container spacing={1}>
                 <Grid item xs={12} lg={4} style={{marginTop: '10rem', display: 'flex', justifyContent: 'center'}}>
-                    <img src={Me} alt='Casey Rowlands' height='450' width='450' />
+                    <img src={Me} alt='Casey Rowlands' height='450' width='450' style={{borderRadius: '50%'}} />
                 </Grid>  
                 <Grid item xs={12} lg={8}>
                     <Jumbotron />

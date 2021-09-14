@@ -23,10 +23,10 @@ const Resume = () => {
               <Typography variant='h2' style={{paddingBottom: '2rem'}}>
                   Contact Me:
               </Typography>
-              <Typography variant='h5'>
-                Email: crowlandsdev@gmail.com
+              <Typography variant='h5' style={{paddingBottom: '1rem'}}>
+                Email: casey_codes@caseyrowlands.com
               </Typography>
-              <Typography variant='h5'>
+              <Typography variant='h5' style={{paddingBottom: '1rem'}}>
                 <a
                     href="https://github.com/CaseyR1221"
                     target="_blank"
@@ -36,7 +36,7 @@ const Resume = () => {
                     Github: CaseyR1221
                 </a>
               </Typography>
-              <Typography variant='h5'>
+              <Typography variant='h5' style={{paddingBottom: '1rem'}}>
                 <a
                     href="https://www.linkedin.com/in/casey-rowlands-0311/"
                     target="_blank"
@@ -55,14 +55,11 @@ const Resume = () => {
               </Typography>
               <div className="content" style={{margin: '2rem'}}>
                 <Typography className="intro-p">
-                  I&#39;m a Full-Stack Developer who specializes in building and designing 
-                  exceptional and accessible digital experiences.
-                  I love designing and building new and exciting things, so I
-                  feel right at home as a Full-Stack Developer. I&#39;m
-                  experienced in developing and designing products for the web,
-                  from simple landing pages to full-fledged web apps.
-                  I&#39;m currently seeking a Front-End Development position 
-                  with an innovative company where i can put my creative skills to use.
+                  Motivated graduate of the University of Central Florida Full Stack Development Bootcamp 
+                  seeking full time employment opportunities where I can transition into the field of software 
+                  development and utilize my passion for building and designing intuitive digital experiences. 
+                  With a demonstrated history of successfully coaching and motivating teams to meet a common goal, 
+                  I am a quick learner of new technologies who excels working in a team setting or self-directed. 
                 </Typography>
               </div>
             </div>
@@ -105,17 +102,6 @@ const Resume = () => {
               </Typography>
               <div className="content" style={{margin: '2rem'}}>
                 <Typography className="university">
-                    <strong>Valencia College</strong>
-                </Typography>
-                <Typography className="college">
-                    <em>College of Computer and Information Science</em>
-                </Typography>
-                <Typography className="major">
-                  <strong>Major:</strong> Computer Science
-                </Typography>
-              </div>
-              <div className="content" style={{margin: '2rem'}}>
-                <Typography className="university">
                     <strong>University of Central Florida Coding Bootcamp</strong>
                 </Typography>
                 <Typography className="college">
@@ -123,6 +109,25 @@ const Resume = () => {
                 </Typography>
                 <Typography className="major">
                   <strong>Major:</strong> Full-Stack Web Development
+                </Typography>
+              </div>
+              <div className="content" style={{margin: '2rem'}}>
+                <Typography className="university">
+                    <strong>University of Central Florida</strong>
+                </Typography>
+                <Typography className="college">
+                    <em>College of Computer Science and Engineering</em>
+                </Typography>
+                <Typography className="major">
+                  <strong>Major:</strong> Computer Science
+                </Typography>
+              </div>
+              <div className="content" style={{margin: '2rem'}}>
+                <Typography className="university">
+                    <strong>Valencia College</strong>
+                </Typography>
+                <Typography className="major">
+                  <strong>Major:</strong> A.A. General Studies
                 </Typography>
               </div>
             </div>
@@ -150,7 +155,7 @@ const Resume = () => {
                 </Typography>
                 <Typography className="project-desc">
                     Front end web app built using HTML, CSS/Bulma, and JavaScript
-                    to provide users a way to find recipes using food items they
+                    to provide users a way to find recipes using ingredients they
                     already have in their homes.
                 </Typography>
                 <Typography variant='h5' className="project-item">
@@ -166,7 +171,7 @@ const Resume = () => {
                 <Typography className="project-desc">
                     Full-stack Node.js application that uses a Handlebars.js view engine
                     to render the front end. Allows users to view disc golf discs, leave
-                    reviews on discs, and fins disc gold courses near them.
+                    reviews on discs, and find disc golf courses near them.
                 </Typography>
                 <Typography variant='h5' className="project-item">
                   <a
@@ -174,21 +179,23 @@ const Resume = () => {
                     href=""
                     target="_blank"
                   >
-                    Note Taker
+                    Fresh Bytes Kitchen
                   </a>
                 </Typography>
                 <Typography className="project-desc">
-                    Express.js, HTML, and CSS application that allows a user to write notes 
-                    that are saved to local storage, and then retrieve all of those notes to 
-                    be viewed at their convenience.
+                  Full-Stack restaurant interface application built using the MERN stack and Stripe.js for payments.
                 </Typography>
               </div>
             </div>
         </Grid>
       </Grid>
       <div className="resume-PDF-button" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-        <a href="" target="_blank">
-            <Button variant="contained" style={{marginTop: '2rem'}}>Grab a PDF of my full resume</Button>
+        <a 
+          href="https://drive.google.com/file/d/13gBlqSS5fCo287nJp-p1fDPBwOf9XcVA/view?usp=sharing" 
+          target="_blank"
+          rel='noreferrer'
+        >
+            <Button variant="contained" style={{marginTop: '2rem', padding: '3rem'}}><span style={{fontSize: '2rem'}}>Grab a PDF of my full resume</span></Button>
         </a>
       </div>
     </div>

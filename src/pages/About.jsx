@@ -43,8 +43,8 @@ const About = () => {
                         Hi, my name’s Casey, and I’m a Full-Stack Developer who specializes in building and designing 
                         exceptional and accessible digital experiences. I have always loved tech and building new things, so I am constantly reading 
                         up on and experimenting with new technologies. I’ve worked with a wide variety of programming languages and frameworks, but 
-                        currently I use the MERN stack for most of my web development projects. I attended the University of Central Florida and completed 
-                        The UCF Full-Stack Web Development Bootcamp as well.
+                        currently I use the MERN stack for most of my web development projects. I am a graduate of the University of Central Florida 
+                        Full-Stack Web Development Bootcamp, and currently pursuing my Bachelors in Computer Science part-time.
                     </Typography>
                 </Grid> 
                 <Grid item xs={12} lg={6}>

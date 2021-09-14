@@ -110,9 +110,6 @@ const App = () => {
             })}
           >
             <Toolbar>
-              {/* <Typography variant="h5" noWrap className={classes.title}>
-                Casey J. Rowlands
-              </Typography> */}
               <img src={Logo} alt='logo' height='128' width='128' style={{margin: 'auto'}} />
               <IconButton
                 color="inherit"
