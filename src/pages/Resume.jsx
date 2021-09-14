@@ -196,11 +196,11 @@ const Resume = () => {
       </Grid>
       <div className="resume-PDF-button" style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
         <a 
-          href="https://drive.google.com/file/d/13gBlqSS5fCo287nJp-p1fDPBwOf9XcVA/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1g5REuXkXrhmwLhRx_9k_bzjBrhQO2k9O/view?usp=sharing" 
           target="_blank"
           rel='noreferrer'
         >
-            <Button variant="contained" style={{marginTop: '2rem', padding: '3rem'}}><span style={{fontSize: '2rem'}}>Grab a PDF of my full resume</span></Button>
+            <Button variant="contained" style={{marginTop: '2rem', padding: '2rem'}}><span style={{fontSize: '2rem'}}>Grab a PDF of my full resume</span></Button>
         </a>
       </div>
     </div>
