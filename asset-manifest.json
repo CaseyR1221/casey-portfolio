@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b0f2278.chunk.css",
+    "main.js": "/static/js/main.a3939ea5.chunk.js",
+    "main.js.map": "/static/js/main.a3939ea5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6faad825.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6faad825.js.map",
+    "static/js/2.2d26e368.chunk.js": "/static/js/2.2d26e368.chunk.js",
+    "static/js/2.2d26e368.chunk.js.map": "/static/js/2.2d26e368.chunk.js.map",
+    "static/js/3.28c044ee.chunk.js": "/static/js/3.28c044ee.chunk.js",
+    "static/js/3.28c044ee.chunk.js.map": "/static/js/3.28c044ee.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5b0f2278.chunk.css.map": "/static/css/main.5b0f2278.chunk.css.map",
+    "static/js/2.2d26e368.chunk.js.LICENSE.txt": "/static/js/2.2d26e368.chunk.js.LICENSE.txt",
+    "static/media/TastyBytes-Logo.64edce91.jpg": "/static/media/TastyBytes-Logo.64edce91.jpg",
+    "static/media/App.css": "/static/media/black-circuit-3.288f11cb.jpg",
+    "static/media/day-planner.e2afaeee.png": "/static/media/day-planner.e2afaeee.png",
+    "static/media/disc-jockies.586a28e1.png": "/static/media/disc-jockies.586a28e1.png",
+    "static/media/fresh-bytes.169272ec.png": "/static/media/fresh-bytes.169272ec.png",
+    "static/media/green-globe.cb9b8b3d.png": "/static/media/green-globe.cb9b8b3d.png",
+    "static/media/me2.6f4d8cdc.jpg": "/static/media/me2.6f4d8cdc.jpg",
+    "static/media/motto.b7fb92bd.png": "/static/media/motto.b7fb92bd.png",
+    "static/media/note-taker.7852f536.png": "/static/media/note-taker.7852f536.png",
+    "static/media/resume-pic.481e6e64.JPG": "/static/media/resume-pic.481e6e64.JPG",
+    "static/media/weather.0c7bc8c7.png": "/static/media/weather.0c7bc8c7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6faad825.js",
+    "static/js/2.2d26e368.chunk.js",
+    "static/css/main.5b0f2278.chunk.css",
+    "static/js/main.a3939ea5.chunk.js"
+  ]
+}
