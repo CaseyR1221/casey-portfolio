@@ -81,11 +81,9 @@ const Contact = () => {
                 />
                 <button type="submit">{status}</button>
               </div> */}
-              <Typography variant= 'h2' className='contactEmail'>
-                Contact me any time!
-              </Typography>
-              
               <Typography variant= 'h3' className='contactEmail'>
+                Contact me any time!
+                <br />
                 casey_codes@caseyrowlands.com
               </Typography>
             </div>

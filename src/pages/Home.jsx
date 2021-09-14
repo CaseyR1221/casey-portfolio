@@ -25,12 +25,12 @@ const Home = () => {
                 </Grid>  
                 <Grid item xs={12}>
                   <h3 style={{ textAlign: 'center', fontSize: '3rem'}}>
-                    <span style={{fontSize: '2em', color: '#129B50'}}>Hi!</span> Welcome to my site. 
+                    <span style={{fontSize: '5rem', color: '#129B50'}}>Hi!</span> Welcome to my site. 
                     My name is <span style={{fontSize: '5rem', color: '#F59725'}}>Casey</span>, and I'm a 
-                    <span style={{fontSize: '2em', color: '#2EBAE0'}}>Web Developer</span><br /> 
-                    specializing in the <span style={{fontSize: '2em', color: '#129B50'}}>M</span>
-                    <span style={{fontSize: '2em', color: '#F59725'}}>E</span><span style={{fontSize: '2em', color: '#2EBAE0'}}>R</span>
-                    <span style={{fontSize: '2em', color: '#ABBC78'}}>N</span> stack!
+                    <span style={{fontSize: '5rem', color: '#2EBAE0'}}>Web Developer</span><br />
+                    specializing in the <span style={{fontSize: '5rem', color: '#129B50'}}>M</span>
+                    <span style={{fontSize: '5rem', color: '#F59725'}}>E</span><span style={{fontSize: '5rem', color: '#2EBAE0'}}>R</span>
+                    <span style={{fontSize: '5rem', color: '#ABBC78'}}>N</span> stack!
                   </h3>
                 </Grid>             
             </Grid>

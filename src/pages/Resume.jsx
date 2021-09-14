@@ -28,17 +28,17 @@ const Resume = () => {
             className='resumeImage' 
             style={{marginTop: '5rem', borderRadius: '25%' }} />
           <div style={{paddingTop: '5rem'}}>
-              <Typography variant='h2' style={{paddingBottom: '2rem'}}>
+              <Typography variant='h4' style={{paddingBottom: '2rem'}}>
                   Contact Me:
               </Typography>
-              <Typography variant='h5' style={{paddingBottom: '1rem'}}>
+              <Typography variant='h6' style={{paddingBottom: '1rem'}}>
                 <a
                     href="https://github.com/CaseyR1221"
                     target="_blank"
                     rel='noreferrer'
                     style={{color: 'white'}}
                 >
-                    Github: CaseyR1221
+                    Github
                 </a>
               </Typography>
               <Typography variant='h5' style={{paddingBottom: '1rem'}}>
@@ -142,7 +142,7 @@ const Resume = () => {
               </Typography>
               <div className="content" style={{margin: '2rem'}}> 
                 <Typography variant='h5' className="project-item">
-                    caseyrowlands.com  
+                    Portfolio 
                 </Typography>
                 <Typography className="project-desc">
                     Portfolio site designed and coded from scratch to showcase

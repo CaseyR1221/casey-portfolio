@@ -46,7 +46,7 @@ const About = () => {
                     <img src={Logo} alt='logo' height= '350' width= '350'/>
                 </Grid> 
                 <Grid item xs={12} style={{ marginBottom: '10em'}}>
-                    <Typography variant='h4' style={{ margin: '2em', lineHeight: '2em'}}>
+                    <Typography variant='h4' style={{ margin: '2rem', lineHeight: '3rem'}}>
                         Hi, my name’s Casey, and I’m a Full-Stack Developer who specializes in building and designing 
                         exceptional and accessible digital experiences. I have always loved tech and building new things, so I am constantly reading 
                         up on and experimenting with new technologies. I’ve worked with a wide variety of programming languages and frameworks, but 

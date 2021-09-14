@@ -105,22 +105,31 @@ main {
 
 @media (max-width: 640px) { 
   img {
-    height: 400px;
-    width: 400px;
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  span {
+    font-size: 3rem !important;
+  }
+
+  .links {
+    height: 78px !important;
+    width: 78px !important;
   }
 
   .resumeImage {
-    height: 200px !important;
-    width: 200px !important;
+    height: 150px !important;
+    width: 150px !important;
   }
 
   .pImage {
     height: 200px !important;
-    width: 400px !important;
+    width: 300px !important;
   } 
 
   .contactEmail {
-    font-size: 28px !important;
+    font-size: 20px !important;
     margin-bottom: 2rem !important;
   }
 }

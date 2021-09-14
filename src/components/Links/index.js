@@ -18,7 +18,7 @@ const Links = () => {
                 rel='noreferrer'
             >
                 <span>
-                    <img src={git} alt='github' />
+                    <img className='links' src={git} alt='github' />
                 </span>
             </a>
           </ListItem>
@@ -29,7 +29,7 @@ const Links = () => {
                 rel='noreferrer'
             >
                 <span>
-                    <img src={stackOverflow} alt='stack overflow' />
+                    <img className='links' src={stackOverflow} alt='stack overflow' />
                 </span>
             </a> 
           </ListItem>
@@ -40,7 +40,7 @@ const Links = () => {
                 rel='noreferrer'
             >
                 <span>
-                    <img src={linkedin} alt='linkedin' />
+                    <img className='links' src={linkedin} alt='linkedin' />
                 </span>
             </a> 
           </ListItem>
@@ -51,7 +51,7 @@ const Links = () => {
                 rel='noreferrer'
             >
                 <span>
-                    <img src={spotify} alt='spotify' />
+                    <img className='links' src={spotify} alt='spotify' />
                 </span>
             </a> 
           </ListItem>
